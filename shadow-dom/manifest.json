@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+
+	"name": "Shadow dom",
+	"description": "Shadow dom",
+	"version": "0.1",
+
+	"permissions": [
+		"http://*/*",
+    	"https://*/*",
+		"storage",
+		"tabs"
+	],
+
+    "content_scripts": [{
+            "all_frames": false,
+            "matches": [ "http://*/*", "https://*/*" ],
+            "js": ["jquery-2.0.0.min.js", "content.js"],
+            "css": ["style.css"],
+            "run_at": "document_start"
+
+    }],
+
+	"web_accessible_resources": [
+        "window.css"
+    ],
+    "permissions": [
+        "activeTab"
+    ],
+    "minimum_chrome_version": "26"
+}
