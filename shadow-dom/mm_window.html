@@ -1,0 +1,31 @@
+<div id="mmWindow">
+  <div id="mmTopBar" class="row">
+    <div class="span1 mmleft">
+      <a class="route" data-controller="home" data-action="show">
+        <i class="mini-ico-home mini-white"></i>
+      </a>
+    </div>
+    <div id="mmName" class="span10 mmleft">
+      <button id="mmPickerButton" class="route btn btn-mini" data-controller="picker" data-action="show" title="See a list of all your boards. Select to open one and drag stuff into it, edit it, share it and more...">
+        <span></span>
+        <b class="caret"></b>
+      </button>
+      <button id="mmNewBoard" class="btn btn-mini" title="Create a New Board">+</button>
+    </div>
+    <div class="span1 right">
+      <a class="route" data-controller="mmWindow" data-action="closeButtonClicked">
+        <i id="mmNotificationIcon" class="mini-ico-remove mini-white"></i>
+      </a>
+    </div>
+  </div>
+
+  <div id="mmPicker"></div>
+
+  <div id="mmContent">
+    <h5 class="center">Loading Mini Mammoth...</h5>
+    <div id='drop-area' style="background-color: #CCF; width: 100%; height: 100px">
+      <center><h1>drop-area</h1></center>
+    </div>
+  </div>
+
+</div>
